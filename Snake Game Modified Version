@@ -200,17 +200,17 @@ void graphic() // the graphic
 	rectangle(fruitx, fruity, fruitx + 10, fruity + 10); // fruit
 	floodfill(fruitx + 5, fruity + 5, RED);
 
-	setcolor(YELLOW);
-	setfillstyle(SOLID_FILL, YELLOW);
+	setcolor(CYAN);
+	setfillstyle(SOLID_FILL, CYAN);
 	rectangle(x1, y1, x1 + 10, y1 + 10); // head
-	floodfill(x1 + 5, y1 + 5, YELLOW);
+	floodfill(x1 + 5, y1 + 5, CYAN);
 
 	for (int lenght = lenghtmax; lenght > 0; lenght--)
 	{
-		setcolor(WHITE);
-		setfillstyle(SOLID_FILL, WHITE);
+		setcolor(YELLOW);
+		setfillstyle(SOLID_FILL, YELLOW);
 		rectangle(snakex[i], snakey[i], snakex[i] + 10, snakey[i] + 10); // tail
-		floodfill(snakex[i] + 5, snakey[i] + 5, WHITE);
+		floodfill(snakex[i] + 5, snakey[i] + 5, YELLOW);
 		i--;
 	}
 
